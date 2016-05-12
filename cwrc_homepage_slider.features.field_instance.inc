@@ -32,6 +32,12 @@ function cwrc_homepage_slider_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'homepage_slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -110,6 +116,12 @@ function cwrc_homepage_slider_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'homepage_slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -155,6 +167,12 @@ function cwrc_homepage_slider_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured_carousel' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'homepage_slider' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -243,6 +261,12 @@ function cwrc_homepage_slider_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'homepage_slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -305,6 +329,12 @@ function cwrc_homepage_slider_field_default_field_instances() {
         'weight' => 3,
       ),
       'featured_carousel' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'homepage_slider' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -388,6 +418,12 @@ function cwrc_homepage_slider_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'homepage_slider' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -430,6 +466,12 @@ function cwrc_homepage_slider_field_default_field_instances() {
         'weight' => 0,
       ),
       'featured_carousel' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'homepage_slider' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

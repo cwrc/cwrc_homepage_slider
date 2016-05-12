@@ -15,6 +15,7 @@ function cwrc_homepage_slider_default_fe_block_settings() {
   $export['views-homepage_slider-block'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'homepage_slider-block',
     'module' => 'views',
     'node_types' => array(),
@@ -28,6 +29,8 @@ function cwrc_homepage_slider_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   return $export;

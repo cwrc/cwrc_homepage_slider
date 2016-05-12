@@ -5,3 +5,14 @@
  */
 
 include_once 'cwrc_homepage_slider.features.inc';
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function cwrc_homepage_slider_entity_info_alter(&$entity_info) {
+  // Add a build mode to use in the homepage slider.
+  $entity_info['node']['view modes']['homepage_slider'] = array(
+    'label' => t('Homepage slider'),
+    'custom settings' => TRUE,
+  );
+}
