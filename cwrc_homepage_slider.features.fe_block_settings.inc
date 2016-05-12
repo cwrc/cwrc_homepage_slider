@@ -19,18 +19,18 @@ function cwrc_homepage_slider_default_fe_block_settings() {
     'delta' => 'homepage_slider-block',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'de_theme' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'project_banner',
+        'status' => 1,
         'theme' => 'de_theme',
-        'weight' => 0,
+        'weight' => -39,
       ),
     ),
-    'title' => '',
-    'visibility' => 0,
+    'title' => '<none>',
+    'visibility' => 1,
   );
 
   return $export;
