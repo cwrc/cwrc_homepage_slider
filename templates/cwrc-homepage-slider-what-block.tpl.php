@@ -1,0 +1,9 @@
+<div class="what-block">
+  <div class="icon-<?php print $icon ?>"></div>
+  <?php foreach ($items as $item) { ?>
+    <div class="item">
+      <div class="label"><?php print render($item['label']); ?></div>
+      <div class="date"><?php print render($item['date']); ?></div>
+    </div>
+  <?php } ?>
+</div>

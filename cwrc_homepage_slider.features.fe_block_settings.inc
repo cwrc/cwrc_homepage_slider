@@ -12,6 +12,48 @@ function cwrc_homepage_slider_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['cwrc_homepage_slider-collecting'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'collecting',
+    'module' => 'cwrc_homepage_slider',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(),
+    'themes' => array(
+      'de_theme' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'de_theme',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
+  $export['cwrc_homepage_slider-writing'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'writing',
+    'module' => 'cwrc_homepage_slider',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(),
+    'themes' => array(
+      'de_theme' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'de_theme',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
   $export['views-homepage_slider-block'] = array(
     'cache' => -1,
     'css_class' => '',
