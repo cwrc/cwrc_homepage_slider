@@ -75,5 +75,26 @@ function cwrc_homepage_slider_default_fe_block_settings() {
     'visibility' => 1,
   );
 
+  $export['views-what_we_are_sharing-block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'what_we_are_sharing-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(),
+    'themes' => array(
+      'de_theme' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'de_theme',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
   return $export;
 }
