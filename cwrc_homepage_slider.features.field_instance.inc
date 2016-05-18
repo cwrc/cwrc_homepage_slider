@@ -40,7 +40,7 @@ function cwrc_homepage_slider_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -123,9 +123,11 @@ function cwrc_homepage_slider_field_default_field_instances() {
       'homepage_slider' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 5,
+        'settings' => array(
+          'trim_length' => 100,
+        ),
+        'type' => 'text_trimmed',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -182,10 +184,10 @@ function cwrc_homepage_slider_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'homepage_slider_main_image',
+          'image_style' => 'front_page_slider_inner_img',
         ),
         'type' => 'image',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -275,7 +277,7 @@ function cwrc_homepage_slider_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_url',
-        'weight' => 7,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -349,10 +351,10 @@ function cwrc_homepage_slider_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'homepage_slider_logo',
+          'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -435,9 +437,11 @@ function cwrc_homepage_slider_field_default_field_instances() {
       'homepage_slider' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
+        'settings' => array(
+          'trim_length' => 130,
+        ),
+        'type' => 'text_trimmed',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -488,10 +492,9 @@ function cwrc_homepage_slider_field_default_field_instances() {
       ),
       'homepage_slider' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',

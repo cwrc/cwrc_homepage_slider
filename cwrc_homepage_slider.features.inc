@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function cwrc_homepage_slider_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "borealis_sb" && $api == "borealis_sb_default") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -51,6 +54,30 @@ function cwrc_homepage_slider_fe_nodequeue_export_fields() {
   );
 
   return $nodequeues;
+}
+
+/**
+ * Implements hook_image_default_styles().
+ */
+function cwrc_homepage_slider_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: front_page_slider_inner_img.
+  $styles['front_page_slider_inner_img'] = array(
+    'label' => 'front page slider inner img',
+    'effects' => array(
+      5 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 800,
+          'height' => 165,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
 }
 
 /**
