@@ -14,7 +14,7 @@ function cwrc_homepage_slider_default_fe_block_settings() {
 
   $export['cwrc_homepage_slider-collecting'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'what-we-are-homepage',
     'custom' => 0,
     'delta' => 'collecting',
     'module' => 'cwrc_homepage_slider',
@@ -23,7 +23,7 @@ function cwrc_homepage_slider_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'de_theme' => array(
-        'region' => 'content',
+        'region' => 'main_suffix',
         'status' => 1,
         'theme' => 'de_theme',
         'weight' => 0,
@@ -35,7 +35,7 @@ function cwrc_homepage_slider_default_fe_block_settings() {
 
   $export['cwrc_homepage_slider-writing'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'what-we-are-homepage',
     'custom' => 0,
     'delta' => 'writing',
     'module' => 'cwrc_homepage_slider',
@@ -44,7 +44,7 @@ function cwrc_homepage_slider_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'de_theme' => array(
-        'region' => 'content',
+        'region' => 'main_suffix',
         'status' => 1,
         'theme' => 'de_theme',
         'weight' => 0,
@@ -77,7 +77,7 @@ function cwrc_homepage_slider_default_fe_block_settings() {
 
   $export['views-what_we_are_sharing-block'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'what-we-are-homepage',
     'custom' => 0,
     'delta' => 'what_we_are_sharing-block',
     'module' => 'views',
@@ -86,7 +86,7 @@ function cwrc_homepage_slider_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'de_theme' => array(
-        'region' => 'content',
+        'region' => 'main_suffix',
         'status' => 1,
         'theme' => 'de_theme',
         'weight' => 0,
