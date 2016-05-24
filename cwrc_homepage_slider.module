@@ -83,8 +83,7 @@ function _cwrc_homepage_slider_get_collecting() {
 
   // Build select query for block.
   $query = $client->createSelect();
-  $helper = $query->getHelper();
-  $query->setQuery('(RELS_EXT_isViewableByRole_literal_ms:("anonymous user")) OR (-RELS_EXT_isViewableByRole_literal_ms:["" TO *])')
+  $query->setQuery('((RELS_EXT_isViewableByRole_literal_ms:("anonymous user")) OR (-RELS_EXT_isViewableByRole_literal_ms:["" TO *])) AND (-RELS_EXT_hasModel_uri_ms:"info:fedora/islandora:collectionCModel")')
     ->addParam('rows', 3)
     ->addParam('defType', 'edismax')
     ->setFields(array(
@@ -116,8 +115,7 @@ function _cwrc_homepage_slider_get_writing() {
 
   // Build select query for block.
   $query = $client->createSelect();
-  $helper = $query->getHelper();
-  $query->setQuery('(RELS_EXT_isViewableByRole_literal_ms:("anonymous user")) OR (-RELS_EXT_isViewableByRole_literal_ms:["" TO *])')
+  $query->setQuery('((RELS_EXT_isViewableByRole_literal_ms:("anonymous user")) OR (-RELS_EXT_isViewableByRole_literal_ms:["" TO *])) AND (-RELS_EXT_hasModel_uri_ms:"info:fedora/islandora:collectionCModel")')
     ->addParam('rows', 3)
     ->addParam('defType', 'edismax')
     ->setFields(array(
