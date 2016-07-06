@@ -90,6 +90,7 @@ function _cwrc_homepage_slider_get_collecting() {
       "PID",
       "fgs_label_s",
       "fgs_createdDate_dt",
+      "workflow_date_current_dt",
     ))
     ->addSort('fgs_createdDate_dt', $query::SORT_DESC);
 
@@ -122,15 +123,22 @@ function _cwrc_homepage_slider_get_writing() {
       "PID",
       "fgs_label_s",
       "fgs_createdDate_dt",
+      "workflow_date_current_dt",
     ))
     ->addSort('workflow_date_current_dt', $query::SORT_DESC);
 
   // Get query results.
   $results = $client->select($query);
   foreach ($results as $result) {
+    // some results may not have a recent workflow stamp
+    $date = $result['workflow_date_current_dt'];
+    if (empty($date)) {
+      $date = $result['fgs_createdDate_dt'];
+    }
+
     $items[] = array(
       'label' => array('#markup' => l($result['fgs_label_s'], 'islandora/object/' . $result['PID'])),
-      'date' => array('#markup' => date('n/j/y', strtotime($result['fgs_createdDate_dt']))),
+      'date' => array('#markup' => date('n/j/y', strtotime($date))),
     );
   }
 
