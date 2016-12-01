@@ -1,3 +1,10 @@
+<?php
+
+/**
+ * @file
+ * Display a "What We Are Writing" or "What We Are Collecting" block.
+ */
+?>
 <div class="what-block">
   <div class="icon-<?php print $icon ?>"></div>
   <?php foreach ($items as $item) { ?>

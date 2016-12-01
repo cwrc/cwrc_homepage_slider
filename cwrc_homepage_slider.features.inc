@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * cwrc_homepage_slider.features.inc
@@ -29,7 +30,7 @@ function cwrc_homepage_slider_views_api($module = NULL, $api = NULL) {
 function cwrc_homepage_slider_fe_nodequeue_export_fields() {
   $nodequeues = array();
 
-  // Exported nodequeues: homepage_slider
+  // Exported nodequeues: homepage_slider.
   $nodequeues['homepage_slider'] = array(
     'name' => 'homepage_slider',
     'title' => 'Homepage Slider',

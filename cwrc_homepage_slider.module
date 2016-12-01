@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Code for the CWRC: Homepage Slider feature.
@@ -40,7 +41,7 @@ function cwrc_homepage_slider_theme($existing, $type, $theme, $path) {
   return array(
     'cwrc_homepage_slider_what_block' => array(
       'template' => 'templates/cwrc-homepage-slider-what-block',
-      'variables' => array('icon' => null, 'items' => array()),
+      'variables' => array('icon' => NULL, 'items' => array()),
     ),
   );
 }
@@ -60,6 +61,7 @@ function cwrc_homepage_slider_block_view($delta = '') {
         '#items' => _cwrc_homepage_slider_get_writing(),
       );
       break;
+
     case 'collecting':
       $block['subject'] = t('What We Are Collecting');
       $block['content'] = array(
@@ -74,8 +76,7 @@ function cwrc_homepage_slider_block_view($delta = '') {
 }
 
 /**
- * Helper function that returns renderable array of items that are recently
- * added to the repository.
+ * Helper function to return render array of items recently added to repository.
  */
 function _cwrc_homepage_slider_get_collecting() {
   $items = array();
@@ -107,8 +108,7 @@ function _cwrc_homepage_slider_get_collecting() {
 }
 
 /**
- * Helper function that returns renderable array of items that are recently
- * added to the repository.
+ * Helper function to return render array of items recently added to repository.
  */
 function _cwrc_homepage_slider_get_writing() {
   $items = array();
@@ -130,7 +130,7 @@ function _cwrc_homepage_slider_get_writing() {
   // Get query results.
   $results = $client->select($query);
   foreach ($results as $result) {
-    // some results may not have a recent workflow stamp
+    // Some results may not have a recent workflow stamp.
     $date = $result['workflow_date_current_dt'];
     if (empty($date)) {
       $date = $result['fgs_createdDate_dt'];
