@@ -7,6 +7,8 @@
 
 include_once 'cwrc_homepage_slider.features.inc';
 
+/* Hooks. */
+
 /**
  * Implements hook_entity_info_alter().
  */
@@ -74,6 +76,8 @@ function cwrc_homepage_slider_block_view($delta = '') {
 
   return $block;
 }
+
+/* Helper functions. */
 
 /**
  * Helper function to return render array of items recently added to repository.
