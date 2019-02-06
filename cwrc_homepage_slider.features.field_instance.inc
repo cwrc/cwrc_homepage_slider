@@ -10,7 +10,7 @@
 function cwrc_homepage_slider_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-slider_content-field_banner_image'
+  // Exported field_instance: 'node-slider_content-field_banner_image'.
   $field_instances['node-slider_content-field_banner_image'] = array(
     'bundle' => 'slider_content',
     'deleted' => 0,
@@ -100,7 +100,7 @@ function cwrc_homepage_slider_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slider_content-field_description'
+  // Exported field_instance: 'node-slider_content-field_description'.
   $field_instances['node-slider_content-field_description'] = array(
     'bundle' => 'slider_content',
     'default_value' => NULL,
@@ -157,7 +157,7 @@ function cwrc_homepage_slider_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slider_content-field_image'
+  // Exported field_instance: 'node-slider_content-field_image'.
   $field_instances['node-slider_content-field_image'] = array(
     'bundle' => 'slider_content',
     'deleted' => 0,
@@ -247,7 +247,7 @@ function cwrc_homepage_slider_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slider_content-field_link'
+  // Exported field_instance: 'node-slider_content-field_link'.
   $field_instances['node-slider_content-field_link'] = array(
     'bundle' => 'slider_content',
     'default_value' => array(
@@ -324,7 +324,7 @@ function cwrc_homepage_slider_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slider_content-field_logo_image'
+  // Exported field_instance: 'node-slider_content-field_logo_image'.
   $field_instances['node-slider_content-field_logo_image'] = array(
     'bundle' => 'slider_content',
     'deleted' => 0,
@@ -414,7 +414,7 @@ function cwrc_homepage_slider_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slider_content-field_text'
+  // Exported field_instance: 'node-slider_content-field_text'.
   $field_instances['node-slider_content-field_text'] = array(
     'bundle' => 'slider_content',
     'default_value' => NULL,
@@ -471,7 +471,7 @@ function cwrc_homepage_slider_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-slider_content-title_field'
+  // Exported field_instance: 'node-slider_content-title_field'.
   $field_instances['node-slider_content-title_field'] = array(
     'bundle' => 'slider_content',
     'default_value' => NULL,

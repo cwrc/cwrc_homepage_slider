@@ -107,7 +107,7 @@ function cwrc_homepage_slider_views_default_views() {
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['xml_file'] = 'http://www.cwrc.ca/category/blog/feed/';
+  $handler->display->display_options['query']['options']['xml_file'] = 'https://canlitforlittlecanadians.blogspot.com/feeds/posts/default?alt=rss';
   $handler->display->display_options['query']['options']['row_xpath'] = '/rss/channel/item';
   $handler->display->display_options['query']['options']['show_errors'] = 1;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
